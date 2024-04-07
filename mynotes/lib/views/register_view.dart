@@ -73,7 +73,7 @@ class _RegisterViewState extends State<RegisterView> {
                 enableSuggestions: false,
                 autocorrect: false,
                 decoration: const InputDecoration(
-                  hintText: 'Enter your passwored here',
+                  hintText: 'Enter your password here',
                 ),
               ),
               Center(
