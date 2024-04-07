@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:mynotes/helpers/loading/loading_screen_controller.dart';
 
 class LoadingScreen {
