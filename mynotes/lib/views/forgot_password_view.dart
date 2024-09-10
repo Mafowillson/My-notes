@@ -38,8 +38,10 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             await showPasswordResetSentDialog(context);
           }
           if (state.exception != null) {
-            await showErrorDialog(context,
-                'We could not process your request. Please make sure that you are a registered user, or if not, register a user now by going back one step ');
+            if (context.mounted) {
+              await showErrorDialog(context,
+                  'We could not process your request. Please make sure that you are a registered user, or if not, register a user now by going back one step ');
+            }
           }
         }
       },
